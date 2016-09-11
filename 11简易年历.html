@@ -24,7 +24,7 @@
         <li><strong>3</strong>MAR</li>
         <li><strong>4</strong>APR</li>
         <li><strong>5</strong>MAY</li>
-        <li class="current"><strong>6</strong>JUN</li>
+        <li><strong>6</strong>JUN</li>
         <li><strong>7</strong>JUL</li>
         <li><strong>8</strong>AUG</li>
         <li><strong>9</strong>SEP</li>
@@ -63,21 +63,21 @@
         ];
         var strong = msg.getElementsByTagName("strong")[0];
         var oP = msg.getElementsByTagName("p")[0];
-
+        //初始化
         var myDate = new Date();
         var month = myDate.getMonth()+1;
         strong.innerText = month;
         oP.innerText = oArray[month-1];
+        Lis[month-1].className = "current";
+        //切换
         for(var i=0;i<Lis.length;i++){
             Lis[i].index = i;
-            Lis[i].className = "";
-            Lis[month-1].className = "current";
             Lis[i].onmouseover = function () {
                 for(var i=0;i<Lis.length;i++){
                     Lis[i].className = "";
                     Lis[this.index].className = "current";
-                    strong.innerText = i+1;
-                    oP.innerText = oArray[this.idnex];
+                    strong.innerText = this.index+1;
+                    oP.innerText = oArray[this.index];
                 }
             }
         }

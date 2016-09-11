@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f84a47ef-916b-412e-8d08-1529a52a6780" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/13提示框--鼠标经过显示图片.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/11简易年历.html" afterPath="$PROJECT_DIR$/11简易年历.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/13提示框--鼠标经过显示图片.html" afterPath="$PROJECT_DIR$/13提示框--鼠标经过显示图片.html" />
     </list>
     <ignored path="anli.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="13提示框--鼠标经过显示图片.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/13提示框--鼠标经过显示图片.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="696">
+              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -167,18 +166,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1473596815168</updated>
-      <workItem from="1473596816842" duration="3672000" />
+      <workItem from="1473596816842" duration="3692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3672000" />
+    <option name="totallyTimeSpent" value="3692000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="6" width="1045" height="1018" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25558794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25558794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -215,8 +214,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/13提示框--鼠标经过显示图片.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        <state relative-caret-position="696">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #center{ width:500px; margin:30px auto;}
+        #box{ width:100px; height:100px; background-color: #00b3ee;}
+    </style>
+</head>
+<body>
+<div id="center">
+    <input type="button" value="变宽">
+    <input type="button" value="变高">
+    <input type="button" value="变色">
+    <input type="button" value="隐藏">
+    <input type="button" value="重置">
+    <p></p>
+    <div id="box"></div>
+</div>
+<script>
+    (function () {
+        var center = document.getElementById('center');
+        var box = document.getElementById('box');
+        var aInput = center.getElementsByTagName('input');
+        var attr = ['width','height','backgroundColor','display','display'];
+        var val = [200+"px",200+"px",'red','none','block'];
+
+//        for(var i=0;i<aInput.length;i++){
+//            aInput[i].index = i;
+//            aInput[i].onclick = function () {
+//                if(this.index == aInput.length-1) box.style.cssText = "";
+//                box.style[attr[this.index]] = val[this.index];
+//            }
+//        }
+
+        var changeStyle = function (ele,attr,val) {
+            ele.style[attr] = val;
+        }
+        for(var i=0;i<aInput.length;i++){
+            aInput[i].index = i;
+            aInput[i].onclick = function () {
+                if(this.index == aInput.length-1) box.style.cssText = "";
+                changeStyle(box,attr[this.index],val[this.index]);
+            }
+        }
+    })();
+</script>
+</body>
+</html>

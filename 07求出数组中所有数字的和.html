@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #center{ width:200px;}
+    </style>
+</head>
+<body>
+<div id="center">
+    <input type="text" placeholder="输入数字用，间隔" value="">
+    <input type="button" value="求和">
+    <span></span>
+</div>
+<script>
+    (function () {
+        var oInput = document.getElementsByTagName("input");
+        oInput[0].onkeyup = function () {
+            this.value = this.value.replace(/[^(\d)|(,)]/,"");
+        };
+        oInput[1].onclick =function () {
+            var res =null;
+            arr=oInput[0].value.split(",");
+            for(var i=0;i<arr.length;i++){res +=parseInt(arr[i]);}
+//            分割出来的为字符串，parseInt转换成数字
+            alert(res);
+        }
+
+    })();
+</script>
+</body>
+</html>

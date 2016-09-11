@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{float:left;width:100px; height:100px; margin-right: 20px; background-color: #ccc;}
+    </style>
+</head>
+<body>
+<div id="center">
+    <input type="button" value="点击">
+    <div id="box">
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+    </div>
+</div>
+<script>
+    (function () {
+        var oInput = document.getElementsByTagName("input")[0];
+        var box = document.getElementById("box");
+        var oDiv = box.getElementsByTagName("div");
+        oInput.onclick = function () {
+            for(var i=0;i<oDiv.length;i++){
+                oDiv[i].style.backgroundColor = "red";
+            }
+        }
+
+    })();
+</script>
+</body>
+</html>

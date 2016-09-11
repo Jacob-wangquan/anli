@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{background-color: #f9aab7;}
+        #center{ width:500px; margin:30px auto;}
+        #btnLine div{float:left;width: 16px; height:16px; margin-right:10px;}
+        #btnLine div:first-child{background-color: red;border-color:red;}
+        #btnLine div:nth-child(2){background-color: green}
+        #btnLine div:last-child{background-color: blue}
+        #btnLine div.active{background-color: #fff;border-width: 4px;border-style: solid;}
+        #menu{ clear: both;width:360px;overflow: hidden; background: red; }
+        #menu a{width:60px; height:30px;border-left:1px solid #fff; text-align:center; line-height: 30px; font-size: 16px; display: inline-block;color:#fff;}
+    </style>
+</head>
+<body>
+<div id="center">
+   <div id="btnLine">
+       <div class="active"></div>
+       <div></div>
+       <div></div>
+   </div>
+
+    <div id="menu">
+        <a href="#">新闻</a>
+        <a href="#">新闻</a>
+        <a href="#">新闻</a>
+        <a href="#">新闻</a>
+        <a href="#">新闻</a>
+    </div>
+</div>
+<script>
+    (function () {
+        var btnLine = document.getElementById('btnLine');
+        var btns = btnLine.getElementsByTagName('div');
+        var menu = document.getElementById('menu');
+        var vals = ["red","green","blue"];
+        var bgs = ["#f9aab7","#aaf9bb","#acaaf9"];
+        var body = document.getElementsByTagName('body')[0];
+        var  changeColor = function (ele,val,bg) {
+            menu.style.backgroundColor = val;
+            body.style.backgroundColor = bg;
+            ele.style.borderColor = val;
+            ele.className = "active";
+        };
+
+        for(var i=0;i<btns.length;i++){
+            btns[i].index = i;
+            btns[i].onclick = function () {
+                for(var i=0;i<btns.length;i++){btns[i].className = "";}
+                changeColor(btns[this.index],vals[this.index],bgs[this.index]);
+            }
+        }
+    })();
+</script>
+</body>
+</html>

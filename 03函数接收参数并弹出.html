@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="center">
+    <input type="text" value="杭州市" id="city">
+    <input type="text" value="西湖区" id="district">
+    <input type="button" value="传参" id="button">
+</div>
+<script>
+    (function () {
+        var oInput = document.getElementsByTagName("input");
+        var btn = document.getElementById("button");
+
+        var myFun = function (obj) {
+          alert(obj.value);
+        };
+        btn.onclick = function () {
+            myFun(oInput[0]);
+            myFun(oInput[1]);
+        }
+
+    })();
+</script>
+</body>
+</html>

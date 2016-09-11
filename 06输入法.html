@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #center{width: 110px;}
+       #box{width:100px;display:none;}
+        p{height: 30px; width: 98px; border:1px solid #ccc; margin: 0; padding: 0;}
+    </style>
+</head>
+<body>
+<div id="center">
+    <input type="button" value="切换输入法">
+    <div id="box">
+        <p>手写</p>
+        <p>拼音</p>
+        <p>关闭</p>
+    </div>
+</div>
+<script>
+    (function () {
+        var oInput = document.getElementsByTagName("input")[0];
+        var center = document.getElementById("center");
+        var box = document.getElementById("box");
+        var close = box.getElementsByTagName("p")[2];
+        center.onmouseover  = function () {
+            box.style.display = "block";
+        };
+        center.onmouseout  = function () {
+            box.style.display = "none";
+        };
+        close.onclick = function () {
+            box.style.display = "none";
+        }
+
+    })();
+</script>
+</body>
+</html>

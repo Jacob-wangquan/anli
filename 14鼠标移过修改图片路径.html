@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul,li{margin:0;padding:0;}
+        body{background:#000;}
+        img{border:0;border-radius:3px;}
+        ul{list-style-type:none;}
+        #box{width:212px;border:5px solid #fff;overflow:hidden;zoom:1;background:#fff;border-radius:5px;margin:10px auto;padding:0 0 3px 3px;}
+        #box li,#box li img{float:left;width:50px;height:50px;}
+        #box li{margin:3px 3px 0 0;}
+        #box li.first{position:relative;}
+        #box li.first,#box li.first img{width:156px;height:156px;}
+        #box li.first div{position:absolute;top:0;left:0;width:156px;height:156px;display:none;opacity:0.5;filter:alpha(opacity=50);background:#fff url(img/loading.gif) 50% 50% no-repeat;}
+
+    </style>
+</head>
+<body>
+<ul id="box">
+    <li class="first">
+        <img src="img/big_1.jpg">
+        <!--<div></div>-->
+        <!--div里放loading.gif-->
+    </li>
+    <li><a href="javascript:;"><img src="img/big_1.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_2.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_3.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_1.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_2.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_3.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_1.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_2.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_3.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_1.jpg"></a></li>
+    <li><a href="javascript:;"><img src="img/big_2.jpg"></a></li>
+</ul>
+
+<script>
+    (function () {
+        var box = document.getElementById("box");
+        var Imgs = box.getElementsByTagName("img");
+
+        for(var i=0;i<Imgs.length;i++){
+            Imgs[i].index = i;
+            Imgs[i].onmouseover = function () {
+                Imgs[0].src = Imgs[this.index].src;
+            }
+        }
+        
+    })();
+</script>
+</body>
+</html>
